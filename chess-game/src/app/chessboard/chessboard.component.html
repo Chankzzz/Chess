@@ -1,0 +1,14 @@
+<p>chessboard works!</p>
+<!-- <link rel="style/css" href="chessboard.component.css"> -->
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-1" *ngFor="let col of cols; let colIndex = index">
+        <div class="row">
+          <div class="col square" *ngFor="let row of rows; let rowIndex = index">
+            <div [ngClass]="getSquareColor(rowIndex, colIndex)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
